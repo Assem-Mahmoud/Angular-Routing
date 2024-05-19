@@ -1,0 +1,66 @@
+<div>
+  <!--Header and NavBar-->
+  <div class="container-fluid bg-secondary-app p-4">
+    <div
+      class="d-flex flex-row justify-content-around align-items-center bg-secondary-app"
+    >
+      <a class="h2 text-white text-decoration-none" routerLink="home">START FRAMEWORK</a>
+      <ul
+        class="d-flex flex-row g-3 nav-list text-white text-decoration-none m-0"
+      >
+        <li
+          class="text-decoration-none fw-bold px-3 py-1 text-center ms-4 list-unstyled"
+          routerLink="about"
+          [routerLinkActive]="'active-link'"
+        >
+          ABOUT
+        </li>
+        <li
+          class="text-decoration-none px-3 py-1 fw-bold ms-4 list-unstyled"
+          routerLink="portfolio"
+          [routerLinkActive]="'active-link'"
+        >
+          PORTFOLIO
+        </li>
+        <li
+          class="text-decoration-none fw-bold px-3 py-1 ms-4 list-unstyled"
+          routerLink="contact"
+          [routerLinkActive]="'active-link'"
+        >
+          CONTACT
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--Content-->
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+
+  <!--Footer-->
+  <div class="container-fluid text-white bg-secondary-app">
+    <div class="row">
+      <div
+        class="d-flex flex-column col-4 p-4 justify-content-center align-items-center"
+      >
+        <p class="fw-bold">LOCATION</p>
+        <p>2215 John Daniel Drive</p>
+        <p>Clark, MO 65243</p>
+      </div>
+      <div
+        class="d-flex flex-column col-4 p-4 justify-content-center align-items-center"
+      >
+        <p class="fw-bold">LOCATION</p>
+        <p>2215 John Daniel Drive</p>
+        <p>Clark, MO 65243</p>
+      </div>
+      <div
+        class="d-flex flex-column col-4 p-4 justify-content-center align-items-center"
+      >
+        <p class="fw-bold">LOCATION</p>
+        <p>2215 John Daniel Drive</p>
+        <p>Clark, MO 65243</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+  --col-primary:#1abc9c;
+  --col-secondary:#2c3e50;
+}
+.bg-primary-app{
+  background-color: var(--col-primary); ;
+}
+.bg-secondary-app{
+  background-color:var(--col-secondary); ;
+}
+
+.active-link{
+
+  background-color:var(--col-primary);
+  border-radius: 1rem;
+}
+
+.nav-list li{
+  cursor: pointer;
+}
